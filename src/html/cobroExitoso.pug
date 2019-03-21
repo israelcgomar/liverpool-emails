@@ -1,0 +1,639 @@
+include ./properties.pug
+
+//- HEAD
+table(cellspacing='0', cellpadding='0', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0 auto;padding:0;width:970px", align='center')
+  tbody
+    tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+      td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+        table(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:75px;margin:0;padding:0 15px 0 20px;width:100%")
+          tbody
+            tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+              td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;width:93%")
+                a(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                  - var logo = multisite.logo;
+                  img(src=logo, alt='pottery-barn', style='width: 228px;')
+              td(align='center', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                table(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                  tbody
+                    tr(align='center', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                      td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                        a(href='http://assets.liverpool.com.mx/ayuda/', target='_blank', style='text-decoration:none; color:#81898b;')
+                          span(style='display:block; text-align: center;')
+                            -  var help = multisite.help;
+                            img(src=help)
+    tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+      td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+        table(style="box-sizing:border-box;color:#4a4a4a;font-family:'Roboto',sans-serif;font-size:13px;height:auto;margin:0;padding:0 15px 0 20px;width:100%")
+          tbody
+            tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+              td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                p(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:26px;font-weight:900;margin:0;margin-top:15px;padding:0")
+                  | Hola MPBenjamin
+            tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+              td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                p(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:20px;margin:0;margin-top:6px;padding:0")=template.head_title
+            tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+              td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                p(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:14px;margin:0;margin-top:10px;padding:0")=template.head_description
+
+    //- HEAD
+
+
+
+    //- BODY
+    tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+      td(style="background:#f5f5f5;box-sizing:border-box;display:flex;font-family:'Roboto',sans-serif;font-size:13px;height:90px;margin:0;margin-top:30px;width:100%;border-bottom:1px solid #d7d7d7")
+        div(style="box-sizing:border-box;display:flex;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;width:50%")
+          p(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:14px;font-weight:500;margin:0;padding:20px")=template.body_detalle
+        div(style="box-sizing:border-box;direction:rtl;display:flex;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:20px;width:50%")
+          table
+            tbody
+              -  var button_color = multisite.primary_color;
+              tr(style="background:" + button_color + "; color:#fff;font-family:'Roboto Condensed',sans-serif;box-sizing:border-box")
+                td(style='font-size:18px;margin:0;padding:9px 26px')
+                  a(href='https://wst.liverpool.com.mx/tienda/common/searchOrderDetails/orderNo/o1646951880', style="box-sizing:border-box;color:#fff;font-family:'Roboto Condensed',sans-serif;font-size:16px;margin:0;text-decoration:none", target='_blank', data-saferedirecturl='https://www.google.com/url?q=https://wst.liverpool.com.mx/tienda/common/searchOrderDetails/orderNo/o1646951880&source=gmail&ust=1553119898480000&usg=AFQjCNFq-KfXo3-T6Op-uEtfcJaPkoc7PA')=template.button_text
+    tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+      td(style="background:#f5f5f5;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0 23px 0 23px")
+        div(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:auto;margin:0;margin-top:22px;padding:0;width:100%")
+          table(style="border-collapse:collapse;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;width:100%")
+            tbody
+              tr(style="border-bottom:1px solid #e2e2e2;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:35px;margin:0;padding:0")
+                td(style="box-sizing:border-box;direction:ltr;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;width:90%;text-align:right;background:#fff;border-bottom:1px solid #e2e2e2")
+                  | Código de facturación:
+                td(style="box-sizing:border-box;direction:rtl;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;width:90%;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;margin:0;padding:0")
+                    span(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;font-weight:bold;margin:0;padding:0")
+                      | BROTJKQQEHRLWQGZQDCT
+                td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;padding-left:25px;background:#fff;border-bottom:1px solid #e2e2e2")
+                  a(href='https://172.16.204.185/FaeSferaWeb/InicioLivW/inicio.action', style="box-sizing:border-box;color:#990000;font-family:'Roboto',sans-serif;font-size:12px;margin:0;padding:0;text-decoration:none", target='_blank', data-saferedirecturl='https://www.google.com/url?q=https://172.16.204.185/FaeSferaWeb/InicioLivW/inicio.action&source=gmail&ust=1553119898480000&usg=AFQjCNHUb47ubN-wzNUClwTW_mEEDZEPSA')
+                    | Facturar
+                td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;padding-right:11px;background:#fff;border-bottom:1px solid #e2e2e2")
+                  a(href='https://172.16.204.185/FaeSferaWeb/InicioLivW/inicio.action', style="box-sizing:border-box;color:#990000;font-family:'Roboto',sans-serif;font-size:12px;margin:0;padding:0;text-decoration:none", target='_blank', data-saferedirecturl='https://www.google.com/url?q=https://172.16.204.185/FaeSferaWeb/InicioLivW/inicio.action&source=gmail&ust=1553119898480000&usg=AFQjCNHUb47ubN-wzNUClwTW_mEEDZEPSA')
+                    span(style='font-size: 9px; color: #990000; margin-left: 5px;')
+                      i.icon-arrow_right
+          table(style="border-collapse:collapse;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;width:100%")
+            tbody
+              tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:50px;margin:0;padding:0")
+                td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;padding-left:10px;border-bottom:1px solid #e2e2e2;background:#fff")
+                  p(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;margin:0;padding:0")
+                    span(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;font-weight:bold;margin:0;padding:0")
+                      | Envío
+                    |                                             | No. de pedido:
+                    span(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;font-weight:bold;margin:0;padding:0")
+                      | 0390088777
+                  p(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;margin:0;margin-top:4px;padding:0")
+                    | Fecha estimada de entrega:  
+                    span(style="box-sizing:border-box;color:#3ab54a;font-family:'Roboto',sans-serif;font-size:12px;margin:0;padding:0")
+                      | 16 de febrero-18 de febrero
+          table(style="border-collapse:collapse;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;width:100%")
+            tbody
+              tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:45px;margin:0;padding:0")
+                th(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:12px;font-weight:400;margin:0;padding:0")
+                    | Artículo
+                th(align='left', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:12px;font-weight:400;margin:0;padding:0")
+                    | Nombre
+                th(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:12px;font-weight:400;margin:0;padding:0")
+                    | Precio único
+                th(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:12px;font-weight:400;margin:0;padding:0")
+                    | Cantidad
+                th(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:12px;font-weight:400;margin:0;padding:0")
+                    | Promoción
+                th(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:12px;font-weight:400;margin:0;padding:0")
+                    | Descuento
+                th(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:12px;font-weight:400;margin:0;padding:0")
+                    | Total
+              tr(style="border-bottom:none;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:auto;margin:0;padding:0")
+                td(align='center', valign='top', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;padding-top:12px;width:18%;background:#fff;border-bottom:1px solid #e2e2e2")
+                  img.CToWUd(src='https://ci6.googleusercontent.com/proxy/3YWE1A6DMg3N0vYbE7lxPfYRWXjw4WEYYYdSgo53rExTKRQcBBTee2aWq8Y7vQ4u91Z-svqF_KI5_2Gop1zbAtL1DQ=s0-d-e1-ft#https://ss201qa.liverpool.com.mx/lg/18148439.jpg', height='70', width='80', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;margin-bottom:0!important;padding:0")
+                td(valign='top', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;padding-top:25px;width:20%;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#3b3b3e;font-family:'Roboto',sans-serif;font-size:13px;font-weight:500;margin:0;padding:0")
+                    | Aletas
+                  p(style="box-sizing:border-box;color:#97999b!important;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                    | SKU
+                    | 18148439
+                td(align='center', valign='top', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;padding-top:25px;width:12%;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#3b3b3e;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                    s $75.00
+                  p(style="box-sizing:border-box;color:#3b3b3e;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                    | $52.50
+                td(align='center', valign='top', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;padding-top:25px;width:11%;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#3b3b3e;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                    | 1
+                td(align='center', valign='top', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;padding-top:25px;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#3b3b3e;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                    | 30% DE DESCUENTO - CUENTA CORRIENTE EXTERNAS.
+                td(align='center', valign='top', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;padding-top:25px;width:11%;background:#fff;border-bottom:1px solid #e2e2e2")
+                  | $22.50
+                td(align='center', valign='top', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;padding-top:25px;width:11%;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#3b3b3e;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                    | $52.50
+          table(style="border-collapse:collapse;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;width:100%")
+            tbody
+              tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:50px;margin:0;padding:0")
+                td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;padding-left:10px;border-bottom:1px solid #e2e2e2;background:#fff")
+                  p(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;margin:0;padding:0")
+                    span(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;font-weight:bold;margin:0;padding:0")
+                      | Envío
+                    |                                             | No. de pedido:
+                    span(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;font-weight:bold;margin:0;padding:0")
+                      | 0390088777
+                  p(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;margin:0;margin-top:4px;padding:0")
+                    | Fecha estimada de entrega:  
+                    span(style="box-sizing:border-box;color:#3ab54a;font-family:'Roboto',sans-serif;font-size:12px;margin:0;padding:0")
+                      | Por ahora no es posible mostrar la fecha de entrega
+          table(style="border-collapse:collapse;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;width:100%")
+            tbody
+              tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:45px;margin:0;padding:0")
+                th(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:12px;font-weight:400;margin:0;padding:0")
+                    | Artículo
+                th(align='left', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:12px;font-weight:400;margin:0;padding:0")
+                    | Nombre
+                th(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:12px;font-weight:400;margin:0;padding:0")
+                    | Precio único
+                th(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:12px;font-weight:400;margin:0;padding:0")
+                    | Cantidad
+                th(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:12px;font-weight:400;margin:0;padding:0")
+                    | Promoción
+                th(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:12px;font-weight:400;margin:0;padding:0")
+                    | Descuento
+                th(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:12px;font-weight:400;margin:0;padding:0")
+                    | Total
+              tr(style="border-bottom:none;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:auto;margin:0;padding:0")
+                td(align='center', valign='top', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;padding-top:12px;width:18%;background:#fff;border-bottom:1px solid #e2e2e2")
+                  img.CToWUd(src='https://ci6.googleusercontent.com/proxy/cs7_I3G3bjEMYKbNL2FddcPB4xYwQzq848922f_zDZXlsu9uKMFagglBCamXxY0z0s9k18vkfuqmX10iON4gYi-SYJQWLhlX8KUENCg3pcA-75q0817lKgFAUfveAlLaZQ=s0-d-e1-ft#https://media18qa.liverpool.com.mx/web/images/products/es_MX/lg/1029477449.jpg', height='70', width='80', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;margin-bottom:0!important;padding:0")
+                td(valign='top', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;padding-top:25px;width:20%;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#3b3b3e;font-family:'Roboto',sans-serif;font-size:13px;font-weight:500;margin:0;padding:0")
+                    | Chaleco con Cierre Cruzado para Niña Ferrioni
+                  p(style="box-sizing:border-box;color:#97999b!important;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                    | SKU
+                    | 1029477449
+                  p(style="box-sizing:border-box;color:#97999b!important;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                    img.CToWUd(src='https://ci3.googleusercontent.com/proxy/pidW1e70d43zEFzqWaVfk2OboQ8welMyC-8idfaJQvGJRFmPcIwu1vnVvfItjXi4nxI0qONjXNEkEClIy_SXrvcRiLmjeD44s02g7rImj5E8e-Hv7g=s0-d-e1-ft#https://assetsst.liverpool.com.mx/assets/images/email/gift_ico.png', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:auto;margin:0;padding:0;width:17px")
+                    |                                             Regalo Exclusivo Online
+                td(align='center', valign='top', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;padding-top:25px;width:12%;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#3b3b3e;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                    | $0.01
+                td(align='center', valign='top', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;padding-top:25px;width:11%;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#3b3b3e;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                    | 1
+                td(align='center', valign='top', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;padding-top:25px;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#3b3b3e;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                    | 30% DE DESCUENTO - CUENTA CORRIENTE EXTERNAS.
+                td(align='center', valign='top', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;padding-top:25px;width:11%;background:#fff;border-bottom:1px solid #e2e2e2")
+                  | $0.01
+                td(align='center', valign='top', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;padding-top:25px;width:11%;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#3b3b3e;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                    | $0.00
+          table(style="border-collapse:collapse;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;width:100%")
+            tbody
+              tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:35px;margin:0;padding:0")
+                td(align='center', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;width:20%;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;font-weight:500;margin:0;padding:0")
+                    | No. de Boleta:
+                    span(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;font-weight:900;margin:0;padding:0")
+                      | 0391902123025036
+                td(align='center', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;width:20%;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;font-weight:500;margin:0;padding:0")
+                    | Número de terminal:
+                    span(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;font-weight:900;margin:0;padding:0")
+                      | 36
+                td(align='center', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;width:20%;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;font-weight:500;margin:0;padding:0")
+                    | Tienda:
+                    span(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;font-weight:900;margin:0;padding:0")
+                      | 039
+                td(align='center', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;width:20%;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;font-weight:500;margin:0;padding:0")
+                    | Autorización Bancaria:
+                    span(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;font-weight:900;margin:0;padding:0")
+                      | 018842
+    tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+      td(style="background:#f5f5f5;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0 23px 0 23px")
+        div(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:auto;margin:0;margin-top:22px;padding:0;width:100%")
+          table(style="border-collapse:collapse;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;width:100%")
+            tbody
+              tr(style="border-bottom:1px solid #e2e2e2;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:35px;margin:0;padding:0")
+                td(style="box-sizing:border-box;direction:ltr;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;width:90%;text-align:right;background:#fff;border-bottom:1px solid #e2e2e2")
+                  | Código de facturación:
+                td(style="box-sizing:border-box;direction:rtl;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;width:90%;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;margin:0;padding:0")
+                    span(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;font-weight:bold;margin:0;padding:0")
+                      | BRMUKGQQCERLWQGZQDCT
+                td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;padding-left:25px;background:#fff;border-bottom:1px solid #e2e2e2")
+                  a(href='https://172.16.204.185/FaeSferaWeb/InicioLivW/inicio.action', style="box-sizing:border-box;color:#990000;font-family:'Roboto',sans-serif;font-size:12px;margin:0;padding:0;text-decoration:none", target='_blank', data-saferedirecturl='https://www.google.com/url?q=https://172.16.204.185/FaeSferaWeb/InicioLivW/inicio.action&source=gmail&ust=1553119898480000&usg=AFQjCNHUb47ubN-wzNUClwTW_mEEDZEPSA')
+                    | Facturar
+                td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;padding-right:11px;background:#fff;border-bottom:1px solid #e2e2e2")
+                  a(href='https://172.16.204.185/FaeSferaWeb/InicioLivW/inicio.action', style="box-sizing:border-box;color:#990000;font-family:'Roboto',sans-serif;font-size:12px;margin:0;padding:0;text-decoration:none", target='_blank', data-saferedirecturl='https://www.google.com/url?q=https://172.16.204.185/FaeSferaWeb/InicioLivW/inicio.action&source=gmail&ust=1553119898480000&usg=AFQjCNHUb47ubN-wzNUClwTW_mEEDZEPSA')
+                    span(style='font-size: 9px; color: #990000; margin-left: 5px;')
+                      i.icon-arrow_right
+          table(style="border-collapse:collapse;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;width:100%")
+            tbody
+              tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:50px;margin:0;padding:0")
+                td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;padding-left:10px;border-bottom:1px solid #e2e2e2;background:#fff")
+                  p(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;margin:0;padding:0")
+                    span(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;font-weight:bold;margin:0;padding:0")
+                      | Envío
+                    |                                             | No. de pedido:
+                    span(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;font-weight:bold;margin:0;padding:0")
+                      | 9010394378
+                  p(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;margin:0;margin-top:4px;padding:0")
+                    | Fecha estimada de entrega:  
+                    span(style="box-sizing:border-box;color:#3ab54a;font-family:'Roboto',sans-serif;font-size:12px;margin:0;padding:0")
+                      | 14 de febrero
+          table(style="border-collapse:collapse;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;width:100%")
+            tbody
+              tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:45px;margin:0;padding:0")
+                th(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:12px;font-weight:400;margin:0;padding:0")
+                    | Artículo
+                th(align='left', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:12px;font-weight:400;margin:0;padding:0")
+                    | Nombre
+                th(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:12px;font-weight:400;margin:0;padding:0")
+                    | Precio único
+                th(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:12px;font-weight:400;margin:0;padding:0")
+                    | Cantidad
+                th(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:12px;font-weight:400;margin:0;padding:0")
+                    | Promoción
+                th(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:12px;font-weight:400;margin:0;padding:0")
+                    | Descuento
+                th(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:12px;font-weight:400;margin:0;padding:0")
+                    | Total
+              tr(style="border-bottom:none;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:auto;margin:0;padding:0")
+                td(align='center', valign='top', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;padding-top:12px;width:18%;background:#fff;border-bottom:1px solid #e2e2e2")
+                  img.CToWUd(src='https://ci3.googleusercontent.com/proxy/ezwMtw69lKTg3j_uenRIUH2St4Qg3ZUz24IGGENA5lwjEtsjL2hi8e_KiE74m934tTpc7l3ugBN6dqZL6Cx3rjy3Xg=s0-d-e1-ft#https://ss101qa.liverpool.com.mx/lg/64561588.jpg', height='70', width='80', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;margin-bottom:0!important;padding:0")
+                td(valign='top', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;padding-top:25px;width:20%;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#3b3b3e;font-family:'Roboto',sans-serif;font-size:13px;font-weight:500;margin:0;padding:0")
+                    | Prueba
+                  p(style="box-sizing:border-box;color:#97999b!important;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                    | SKU
+                    | 64561588
+                td(align='center', valign='top', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;padding-top:25px;width:12%;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#3b3b3e;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                    s $109.00
+                  p(style="box-sizing:border-box;color:#3b3b3e;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                    | $76.30
+                td(align='center', valign='top', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;padding-top:25px;width:11%;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#3b3b3e;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                    | 1
+                td(align='center', valign='top', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;padding-top:25px;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#3b3b3e;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                    | 30% DE DESCUENTO - CUENTA CORRIENTE EXTERNAS.
+                td(align='center', valign='top', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;padding-top:25px;width:11%;background:#fff;border-bottom:1px solid #e2e2e2")
+                  | $32.70
+                td(align='center', valign='top', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;padding-top:25px;width:11%;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#3b3b3e;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                    | $76.30
+          table(style="border-collapse:collapse;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;width:100%")
+            tbody
+              tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:35px;margin:0;padding:0")
+                td(align='center', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;width:20%;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;font-weight:500;margin:0;padding:0")
+                    | No. de Boleta:
+                    span(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;font-weight:900;margin:0;padding:0")
+                      | 0391902121131013
+                td(align='center', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;width:20%;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;font-weight:500;margin:0;padding:0")
+                    | Número de terminal:
+                    span(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;font-weight:900;margin:0;padding:0")
+                      | 13
+                td(align='center', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;width:20%;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;font-weight:500;margin:0;padding:0")
+                    | Tienda:
+                    span(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;font-weight:900;margin:0;padding:0")
+                      | 039
+                td(align='center', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;width:20%;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;font-weight:500;margin:0;padding:0")
+                    | Autorización Bancaria:
+                    span(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;font-weight:900;margin:0;padding:0")
+                      | 018843
+    tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+      td(style="background:#f5f5f5;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0 23px 0 23px")
+        div(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:auto;margin:0;margin-top:22px;padding:0;width:100%")
+          table(style="border-collapse:collapse;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;width:100%")
+            tbody
+              tr(style="border-bottom:1px solid #e2e2e2;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:35px;margin:0;padding:0")
+                td(style="box-sizing:border-box;direction:ltr;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;width:90%;text-align:right;background:#fff;border-bottom:1px solid #e2e2e2")
+                td(style="box-sizing:border-box;direction:rtl;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;width:90%;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;margin:0;padding:0")
+                    span(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;font-weight:bold;margin:0;padding:0")
+                td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;padding-left:25px;background:#fff;border-bottom:1px solid #e2e2e2")
+                  a(href='https://wst.liverpool.com.mx/tienda/users/mirakl/miraklInvoiceForm.jsp?trackingNumber=0390088778', style="box-sizing:border-box;color:#990000;font-family:'Roboto',sans-serif;font-size:12px;margin:0;padding:0;text-decoration:none", target='_blank', data-saferedirecturl='https://www.google.com/url?q=https://wst.liverpool.com.mx/tienda/users/mirakl/miraklInvoiceForm.jsp?trackingNumber%3D0390088778&source=gmail&ust=1553119898481000&usg=AFQjCNG8jn5ov13fHDBENqvtRMEVyns2wg')
+                    | Facturar
+                td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;padding-right:11px;background:#fff;border-bottom:1px solid #e2e2e2")
+                  a(href='https://172.16.204.185/FaeSferaWeb/InicioLivW/inicio.action', style="box-sizing:border-box;color:#990000;font-family:'Roboto',sans-serif;font-size:12px;margin:0;padding:0;text-decoration:none", target='_blank', data-saferedirecturl='https://www.google.com/url?q=https://172.16.204.185/FaeSferaWeb/InicioLivW/inicio.action&source=gmail&ust=1553119898480000&usg=AFQjCNHUb47ubN-wzNUClwTW_mEEDZEPSA')
+                    span(style='font-size: 9px; color: #990000; margin-left: 5px;')
+                      i.icon-arrow_right
+          table(style="border-collapse:collapse;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;width:100%")
+            tbody
+              tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:50px;margin:0;padding:0")
+                td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;padding-left:10px;border-bottom:1px solid #e2e2e2;background:#fff")
+                  p(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;margin:0;padding:0")
+                    span(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;font-weight:bold;margin:0;padding:0")
+                      | Envío
+                    |                                             | No. de pedido:
+                    span(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;font-weight:bold;margin:0;padding:0")
+                      | 0390088778
+                  p(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;margin:0;margin-top:4px;padding:0")
+                    | Fecha estimada de entrega:  
+                    span(style="box-sizing:border-box;color:#e1a625;font-family:'Roboto',sans-serif;font-size:12px;margin:0;padding:0")
+                      | Pronto tendremos la fecha de entrega de este producto
+          table(style="border-collapse:collapse;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;width:100%")
+            tbody
+              tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:45px;margin:0;padding:0")
+                th(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:12px;font-weight:400;margin:0;padding:0")
+                    | Artículo
+                th(align='left', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:12px;font-weight:400;margin:0;padding:0")
+                    | Nombre
+                th(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:12px;font-weight:400;margin:0;padding:0")
+                    | Precio único
+                th(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:12px;font-weight:400;margin:0;padding:0")
+                    | Cantidad
+                th(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:12px;font-weight:400;margin:0;padding:0")
+                    | Promoción
+                th(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:12px;font-weight:400;margin:0;padding:0")
+                    | Descuento
+                th(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:12px;font-weight:400;margin:0;padding:0")
+                    | Total
+              tr(style="border-bottom:none;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:auto;margin:0;padding:0")
+                td(align='center', valign='top', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;padding-top:12px;width:18%;background:#fff;border-bottom:1px solid #e2e2e2")
+                  img.CToWUd(src='https://ci6.googleusercontent.com/proxy/odVWFpygBh7Lh47AXBDeYcu8oQNI6RUDCK_5Y_0BveZ-rZJCBCLaWmYH71XufsEmzCWYbLVFt7vyGB1fo4bDWeHIGw=s0-d-e1-ft#https://ss201.liverpool.com.mx/lg/1030458938.jpg', height='70', width='80', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;margin-bottom:0!important;padding:0")
+                td(valign='top', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;padding-top:25px;width:20%;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#3b3b3e;font-family:'Roboto',sans-serif;font-size:13px;font-weight:500;margin:0;padding:0")
+                    | SHOP5-Bicicleta Alubike prueba variantes
+                  p(style="box-sizing:border-box;color:#97999b!important;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                    | SKU 
+                    | 1030463176
+                    br
+                  p Vendido por SHOPQABI-07
+                  p
+                td(align='center', valign='top', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;padding-top:25px;width:12%;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#3b3b3e;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                    s $675.00
+                  p(style="box-sizing:border-box;color:#3b3b3e;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                    | $275.00
+                td(align='center', valign='top', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;padding-top:25px;width:11%;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#3b3b3e;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                    | 1
+                td(align='center', valign='top', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;padding-top:25px;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#3b3b3e;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                    | No aplica promoción
+                td(align='center', valign='top', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;padding-top:25px;width:11%;background:#fff;border-bottom:1px solid #e2e2e2")
+                  | $400.00
+                td(align='center', valign='top', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;padding-top:25px;width:11%;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;color:#3b3b3e;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                    | $275.00
+          table(style="border-collapse:collapse;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;width:100%")
+            tbody
+              tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:35px;margin:0;padding:0")
+                td(align='center', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;width:20%;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;font-weight:500;margin:0;padding:0")
+                    | No. de Boleta:
+                    span(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;font-weight:900;margin:0;padding:0")
+                      | 0391902123529031
+                td(align='center', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;width:20%;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;font-weight:500;margin:0;padding:0")
+                    | Número de terminal:
+                    span(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;font-weight:900;margin:0;padding:0")
+                      | 31
+                td(align='center', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;width:20%;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;font-weight:500;margin:0;padding:0")
+                    | Tienda:
+                    span(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;font-weight:900;margin:0;padding:0")
+                      | 039
+                td(align='center', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;width:20%;background:#fff;border-bottom:1px solid #e2e2e2")
+                  p(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;font-weight:500;margin:0;padding:0")
+                    | Autorización Bancaria:
+                    span(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;font-weight:900;margin:0;padding:0")
+                      | 018844
+    tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+      td(style="background:#f5f5f5;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:30px 12px 35px")
+        table(cellspacing='0', cellpadding='0', style="border-collapse:collapse;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:auto;margin:0;margin-left:10px;padding:0;width:98%")
+          tbody
+            tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+              td(style="box-sizing:border-box;color:#fff;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                p(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+              td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;width:270px")
+                table(cellspacing='0', cellpadding='0', style="background:#fff;border-collapse:collapse;border-left:1px solid #eee;border-right:1px solid #eee;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:auto;margin:0;padding:0;width:100%")
+                  tbody
+                    tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                      td(style="box-sizing:border-box;border:1px solid #eee;font-family:'Roboto',sans-serif;font-size:13px;height:40px;margin:0;padding:0")
+                        p(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:14px;font-weight:700;margin:0;margin-left:20px;padding:0")
+                          | Resumen de mi compra
+                    tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                      td(style="border:1px solid #eee;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:40px;margin:0;padding:0")
+                        table(cellspacing='0', cellpadding='0', style="border-collapse:collapse;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:auto;margin:0;padding:0;width:100%")
+                          tbody
+                            tr(style="border:none;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                              td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:22px;margin:0;padding:0;width:45%")
+                                p(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:14px;margin:0;margin-left:20px;margin-right:0;margin-top:10px;padding:0")
+                                  | Subtotal:
+                              td(align='right', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:22px;margin:0;padding:0;width:45%")
+                                p(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:14px;margin:0;margin-left:0px;margin-right:20px;margin-top:10px;padding:0")
+                                  | $859.01  MXN
+                            tr(style="border:none;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                              td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:22px;margin:0;padding:0;width:45%")
+                                p(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:14px;margin:0;margin-left:20px;margin-right:0;padding:0")
+                                  | Descuento:
+                              td(align='right', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:22px;margin:0;padding:0;width:45%")
+                                p(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:14px;margin:0;margin-left:0px;margin-right:20px;padding:0")
+                                  | $55.21
+                            tr(style="border:none;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                              td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:22px;margin:0;padding:0;width:45%")
+                                p(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:14px;margin:0;margin-bottom:10px;margin-left:20px;margin-right:0;padding:0")
+                                  | Costo de Envío:
+                              td(align='right', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:22px;margin:0;padding:0;width:45%")
+                                p(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:14px;margin:0;margin-bottom:10px;margin-left:0px;margin-right:20px;padding:0")
+                                  | $0.00
+                    tr(style="border:1px solid #eee;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                      td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:40px;margin:0;padding:0")
+                        table(cellspacing='0', cellpadding='0', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:auto;margin:0;padding:0;width:100%")
+                          tbody
+                            tr(style="border:1px solid #eee;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                              td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:40px;margin:0;padding:0;width:45%")
+                                p(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:14px;font-weight:700;margin:0;margin-left:20px;margin-right:0;padding:0")
+                                  | Total
+                              td(align='right', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:40px;margin:0;padding:0;width:45%")
+                                p(style="box-sizing:border-box;color:#f00;font-family:'Roboto',sans-serif;font-size:14px;font-weight:900;margin:0;margin-left:0px;margin-right:20px;padding:0")
+                                  | $403.80  MXN
+                  //- BODY
+
+
+    tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+      td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+        p(style="box-sizing:border-box;color:#fff;font-family:'Roboto',sans-serif;font-size:0!important;margin:0;padding:5px")
+    tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+      td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+        table(cellspacing='0', cellpadding='0', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:auto;margin:0;margin-top:25px;padding:0 30px 0 25px;width:100%")
+          tbody
+            tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+              td(align='center', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:60px;margin:0;padding:0;width:2%")
+                span(style='font-size: 13px; color: #990000;')
+                  i.icon-arrow_right
+              td(style="background:#f2f2f2;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:60px;margin:0;padding:0;padding-left:30px;width:33%")
+                - var click = multisite.click;
+                img.CToWUd(src=click, style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:22px;margin:0;padding:0;width:224px")
+              td(style="background:#f2f2f2;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:60px;margin:0;padding:0;padding-right:20px")
+                p(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;margin:0;padding:0")
+                  | Si compraste en Click & Collect, recibirás un correo en el cual te indicará
+                  | que tu mercancía esta lista para ser recogida en la tienda de tu selección.
+    tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+      td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+        p(style="box-sizing:border-box;color:#fff;font-family:'Roboto',sans-serif;font-size:0!important;margin:0;padding:5px")
+    tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+      td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+        table(cellspacing='0', cellpadding='0', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:auto;margin:0;padding:0 30px 0 25px;width:100%")
+          tbody
+            tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+              td(align='center', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:60px;margin:0;padding:0;width:2%")
+                span(style='font-size: 13px; color: #990000;')
+                  i.icon-arrow_right
+              td(style="background:#f2f2f2;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:60px;margin:0;padding:0;padding-left:30px;width:33%")
+                - var envio = multisite.envio
+                img.CToWUd(src=envio, style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:43px;margin:0;padding:0;width:197px")
+              td(style="background:#f2f2f2;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:60px;margin:0;padding:0;padding-right:20px")
+                p(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:12px;margin:0;padding:0")
+                  | Si compraste con envío a domicilio recibirás un correo, el cual te indicará el
+                  | tiempo en el que recibirás tu mercancía.
+    tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+      td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+        p(style="border-bottom:1px solid #f2f2f2;box-sizing:border-box;color:#fff;font-family:'Roboto',sans-serif;font-size:0!important;margin:0 25px 30px;margin-bottom:30px;padding:10px 0;width:94.55%")
+    tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+      td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+        table(cellspacing='0', cellpadding='0', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:auto;margin:0;padding:0 30px 0 25px;width:100%")
+          tbody
+            tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+              td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;width:50%")
+                table(cellspacing='0', cellpadding='0', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:auto;margin:0;padding:0;width:100%")
+                  tbody
+                    tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                      td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                        p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:15px;font-weight:bold;margin:0;padding:0")
+                          | FORMA DE PAGO
+                    tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                      td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                        p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:0!important;margin:0;padding:10px 0")
+                    tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                      td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                        p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:14px;margin:0;padding:0")
+                          | Usuario:  
+                          a(href='mailto:mpcietesting@gmail.com', target='_blank') mpcietesting@gmail.com
+                    tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                      td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                        p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:0!important;margin:0;padding:10px 0")
+                    tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                      td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                        p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:14px;margin:0;padding:0")
+                          | No. de tarjeta: XXXXXXXXXXXX7351
+                    tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                      td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                        p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:14px;margin:0;padding:0")
+                          | Tarjeta habiente: MPBenjamin Tellez
+                    tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                      td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                        p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:14px;margin:0;padding:0")
+                          | Banco: Master Card
+                    tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                      td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                        p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:14px;margin:0;padding:0")
+                          | Vence:   02/2024
+                    tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                      td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                        p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:14px;margin:0;padding:0")
+                          | Afiliación:  5121991
+                    tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                      td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                        p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:0!important;margin:0;padding:10px 0")
+                    tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                      td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                        p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:14px;font-weight:bold;margin:0;padding:0")
+                          | Monto:  $403.80  MXN
+              td(valign='top', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                table(cellspacing='0', cellpadding='0', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:auto;margin:0;padding:0;width:100%")
+                  tbody
+                    tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                      td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                        p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:15px;font-weight:bold;margin:0;padding:0")
+                          | Dirección de Entrega
+                    tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                      td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                        p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:0!important;margin:0;padding:10px 0")
+                    tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                      td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                        p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:14px;margin:0;padding:0")
+                          | Mexico, DISTRITO FEDERAL, CDMX, IZTACALCO, EX EJIDO DE LA
+                          | MAGDALENA MIXIUHCA, Doctor Adolfo, 123, 08010, 55-12345678
+    tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+      td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+        div(style="border-bottom:1px solid #f2f2f2;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:24px 6px 0;padding:0 13px 23px;text-align:center")
+          p(style="box-sizing:border-box;color:#4a4a4a;font-family:'Roboto',sans-serif;font-size:10px;margin:0;padding:0")
+            | Distribuidora Liverpool S.A. de C.V. Prolongación Vasco de Quiroga 4800, Torre 2, Piso 3.
+            | Colonia Santa Fe Cuajimalpa. Delegación Cuajimalpa de Morelos. C.P. 05348, Ciudad de
+            | México.DLI931201MI9. Régimen General de Ley Personas Morales.
+    tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+      td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+        div(style="border-bottom:1px solid #f2f2f2;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:24px 6px 0;padding:0 110px 23px;text-align:center")
+          p(style="box-sizing:border-box;color:#000200;font-family:'Roboto',sans-serif;font-size:12px;font-weight:700;margin:0;padding:0")
+            span(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;font-weight:normal;margin:0;padding:0")
+              b Ventas y Centro de Atención Telefónica CDMX y del interior
+              span(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;font-weight:normal;margin:0;padding:0")
+                | (55)
+                | 5262 9999 / 01 800 713 5555
+    tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+      td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+        table(align='center')
+          tbody
+            tr
+              td
+                a(style="box-sizing:border-box;color:#000200;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;text-decoration:none", href='https:https://assetsst.liverpool.com.mx/ayuda/cambios-y-devoluciones.html', target='_blank', data-saferedirecturl='https://www.google.com/url?q=https:https://assetsst.liverpool.com.mx/ayuda/cambios-y-devoluciones.html&source=gmail&ust=1553119898481000&usg=AFQjCNEGQMeu7kS6fj37gYoDAd8_v0HJuQ')
+                  | DEVOLUCIONES
+                | •
+              td
+                a(style="box-sizing:border-box;color:#000200;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;text-decoration:none", href='https:https://assetsst.liverpool.com.mx/ayuda/terminos-y-condiciones.html', target='_blank', data-saferedirecturl='https://www.google.com/url?q=https:https://assetsst.liverpool.com.mx/ayuda/terminos-y-condiciones.html&source=gmail&ust=1553119898481000&usg=AFQjCNGHDG73_Z2nACEnNTufKRgh8VuK3w')
+                  | AVISO DE PRIVACIDAD
+                | •
+              td
+                a(style="box-sizing:border-box;color:#000200;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;text-decoration:none", href='https:https://assetsst.liverpool.com.mx/ayuda/condiciones-de-entrega.html', target='_blank', data-saferedirecturl='https://www.google.com/url?q=https:https://assetsst.liverpool.com.mx/ayuda/condiciones-de-entrega.html&source=gmail&ust=1553119898482000&usg=AFQjCNFQB99Wi_pWGTBTQdH4ltkLoL5bRA')
+                  | CONDICIONES DE ENTREGA
+                | •
+              td
+                a(style="box-sizing:border-box;color:#000200;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0;text-decoration:none", href='https:https://assetsst.liverpool.com.mx/ayuda/garantia-de-servicio.html', target='_blank', data-saferedirecturl='https://www.google.com/url?q=https:https://assetsst.liverpool.com.mx/ayuda/garantia-de-servicio.html&source=gmail&ust=1553119898482000&usg=AFQjCNEwO-sKQ-vnkxQSeLrmJTst2CZgIg')
+                  | GARANTÍA DE SERVICIO
+              td  
+              td  
+              td
+                - var link_fb = multisite.link_fb
+                - var fb = multisite.fb
+                a(href=link_fb, style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0", target='_blank', data-saferedirecturl='https://www.google.com/url?q=https://www.facebook.com/liverpoolmexico&source=gmail&ust=1553119898482000&usg=AFQjCNEmDhd-nCtFZWgaU7G-FKonEan3NQ')
+                  img(src=fb, alt='facebook', border='0')
+              td
+                - var link_instagram = multisite.link_instagram
+                - var instagram = multisite.instagram
+                a(href=link_instagram, style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0 10px;padding:0", target='_blank', data-saferedirecturl='https://www.google.com/url?q=https://twitter.com/LiverpoolMexico&source=gmail&ust=1553119898482000&usg=AFQjCNFKtwlI-2YR4tfE7IVQRN8zAhfIfA')
+                  img(src=instagram, alt='twitter', border='0')
