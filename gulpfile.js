@@ -50,7 +50,9 @@ function html() {
                 fs.readFileSync('./configuration.json')
             );
         }))
-        .pipe(pug())
+        .pipe(pug({
+            pretty: true
+        }))
         .pipe(gulp.dest(paths.html.dest));
 }
 
