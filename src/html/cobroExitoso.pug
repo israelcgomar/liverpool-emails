@@ -49,9 +49,11 @@ table(cellspacing='0', cellpadding='0', style="box-sizing:border-box;font-family
           table
             tbody
               -  var button_color = multisite.primary_color;
-              tr(style="background:" + button_color + "; color:#fff;font-family:'Roboto Condensed',sans-serif;box-sizing:border-box")
-                td(style='font-size:18px;margin:0;padding:9px 26px')
-                  a(href='https://wst.liverpool.com.mx/tienda/common/searchOrderDetails/orderNo/o1646951880', style="box-sizing:border-box;color:#fff;font-family:'Roboto Condensed',sans-serif;font-size:16px;margin:0;text-decoration:none", target='_blank', data-saferedirecturl='https://www.google.com/url?q=https://wst.liverpool.com.mx/tienda/common/searchOrderDetails/orderNo/o1646951880&source=gmail&ust=1553119898480000&usg=AFQjCNFq-KfXo3-T6Op-uEtfcJaPkoc7PA')=template.button_text
+              -  var button = template.button;
+              if (button)
+                tr(style="background:" + button_color + "; color:#fff;font-family:'Roboto Condensed',sans-serif;box-sizing:border-box")
+                  td(style='font-size:18px;margin:0;padding:9px 26px')
+                    a(href='https://wst.liverpool.com.mx/tienda/common/searchOrderDetails/orderNo/o1646951880', style="box-sizing:border-box;color:#fff;font-family:'Roboto Condensed',sans-serif;font-size:16px;margin:0;text-decoration:none", target='_blank', data-saferedirecturl='https://www.google.com/url?q=https://wst.liverpool.com.mx/tienda/common/searchOrderDetails/orderNo/o1646951880&source=gmail&ust=1553119898480000&usg=AFQjCNFq-KfXo3-T6Op-uEtfcJaPkoc7PA')=template.button_text
     tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
       td(style="background:#f5f5f5;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0 23px 0 23px")
         div(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:auto;margin:0;margin-top:22px;padding:0;width:100%")
@@ -495,7 +497,9 @@ table(cellspacing='0', cellpadding='0', style="box-sizing:border-box;font-family
             tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
               td(align='center', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:60px;margin:0;padding:0;width:2%")
                 span(style='font-size: 13px; color: #990000;')
-                  i.icon-arrow_right
+                  - var shape = multisite.shape;
+                  img(src=shape)
+                  //- i.icon-arrow_right
               td(style="background:#f2f2f2;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:60px;margin:0;padding:0;padding-left:30px;width:33%")
                 - var click = multisite.click;
                 img.CToWUd(src=click, style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:22px;margin:0;padding:0;width:224px")
@@ -513,7 +517,7 @@ table(cellspacing='0', cellpadding='0', style="box-sizing:border-box;font-family
             tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
               td(align='center', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:60px;margin:0;padding:0;width:2%")
                 span(style='font-size: 13px; color: #990000;')
-                  i.icon-arrow_right
+                  img(src=shape)
               td(style="background:#f2f2f2;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:60px;margin:0;padding:0;padding-left:30px;width:33%")
                 - var envio = multisite.envio
                 img.CToWUd(src=envio, style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:43px;margin:0;padding:0;width:197px")
@@ -535,45 +539,52 @@ table(cellspacing='0', cellpadding='0', style="box-sizing:border-box;font-family
                     tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
                       td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
                         p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:15px;font-weight:bold;margin:0;padding:0")
-                          | FORMA DE PAGO
-                    tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
-                      td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
-                        p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:0!important;margin:0;padding:10px 0")
-                    tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
-                      td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
-                        p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:14px;margin:0;padding:0")
-                          | Usuario:  
-                          a(href='mailto:mpcietesting@gmail.com', target='_blank') mpcietesting@gmail.com
-                    tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
-                      td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
-                        p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:0!important;margin:0;padding:10px 0")
-                    tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
-                      td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
-                        p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:14px;margin:0;padding:0")
-                          | No. de tarjeta: XXXXXXXXXXXX7351
-                    tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
-                      td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
-                        p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:14px;margin:0;padding:0")
-                          | Tarjeta habiente: MPBenjamin Tellez
-                    tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
-                      td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
-                        p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:14px;margin:0;padding:0")
-                          | Banco: Master Card
-                    tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
-                      td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
-                        p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:14px;margin:0;padding:0")
-                          | Vence:   02/2024
-                    tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
-                      td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
-                        p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:14px;margin:0;padding:0")
-                          | Afiliación:  5121991
-                    tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
-                      td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
-                        p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:0!important;margin:0;padding:10px 0")
-                    tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
-                      td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
-                        p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:14px;font-weight:bold;margin:0;padding:0")
-                          | Monto:  $403.80  MXN
+                          | FORMA DE PAGO 
+                      tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                        td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                          p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:0!important;margin:0;padding:10px 0") 
+                      tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                        td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                          p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:14px;margin:0;padding:0")
+                            | Usuario: &nbsp;
+                            a(href='mailto:mpcietesting@gmail.com', target='_blank') mpcietesting@gmail.com 
+                      tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                        td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                          p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:0!important;margin:0;padding:10px 0") 
+                      tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                        td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                          p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:14px;margin:0;padding:0")
+                            | Pago
+                            | con Transferencia 
+                      tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                        td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                          p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:0!important;margin:0;padding:10px 0") 
+                      tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                        td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                          p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:14px;margin:0;padding:0")
+                            | Estatus:&nbsp;
+                            - var status_color = template.status_color;
+                            span(style="box-sizing:border-box;color:"+ status_color +"; font-family:'Roboto',sans-serif;font-size:14px;margin:0;padding:0")=template.status
+                      if (template.reference)
+                        tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                          td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                            p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:14px;margin:0;padding:0")
+                              | Referencia:&nbsp; 1122 - 3665 - 9039 - 1902 - 6251
+                      if (template.clabe)
+                        tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                          td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                            p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:14px;margin:0;padding:0")
+                              | CLABE para pago:&nbsp; 000000000000000001
+                      if (template.banco) 
+                        tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                          td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                            p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:14px;margin:0;padding:0")
+                              | Banco destino:&nbsp; BBVA Bancomer 
+                      if (template.vigencia)
+                        tr(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                          td(style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
+                            p(style="box-sizing:border-box;color:#000;font-family:'Roboto',sans-serif;font-size:14px;margin:0;padding:0")
+                              | Vigencia:&nbsp;2019-02-12 23:59:59 
               td(valign='top', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;margin:0;padding:0")
                 table(cellspacing='0', cellpadding='0', style="box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:13px;height:auto;margin:0;padding:0;width:100%")
                   tbody
