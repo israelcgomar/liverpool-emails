@@ -2,8 +2,8 @@
 {
     "_comment":"if you want to add some addicional configuration edit ./src/components/configurations.pug file",
     "$cp": true,
-    "$pottery": true,
-    "$kids": false,
+    "$pottery": false,
+    "$kids": true,
     "$teens": false,
     "$west": false,
     "$william": false
